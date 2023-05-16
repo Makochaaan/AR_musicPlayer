@@ -35,6 +35,7 @@
   >
     <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
     <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+    <p><img id="output" width="200" /></p>
 
 
   </body>
@@ -43,7 +44,7 @@
     <a-nft
       id="output"
       type="nft"
-      
+      url="your-server/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
