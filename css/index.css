@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+}
+.main {
+    width: 100%;
+    height: 1024px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.title {
+    width: 964px;
+    height: 127px;
+    background: rgb(206, 206, 206);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.background_image {
+    width: 100%;
+    height: 785px;
+    background-image: ;
+    opacity: 1;
+    position: absolute;
+    top: 179px;
+    overflow: hidden;
+}
+.sentence {
+    width: 893px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 333px;
+    left: 368px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+}
+.upload_file {
+    width: 617px;
+    height: 246px;
+    background: rgba(222,129,129,1);
+    opacity: 1;
+    position: absolute;
+    top: 615px;
+    left: 111px;
+    overflow: hidden;
+}
+.go_ar {
+    width: 560px;
+    height: 246px;
+    background: rgba(252,202,73,1);
+    opacity: 1;
+    position: absolute;
+    top: 615px;
+    left: 661px;
+    overflow: hidden;
+}
+.select_background {
+    width: 351px;
+    height: 43px;
+    background: rgb(0, 0, 0);
+    opacity: 1;
+    position: absolute;
+    top: 695px;
+    left: 150px;
+    overflow: hidden;
+}
+.send_background {
+    width: 113px;
+    height: 43px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 695px;
+    left: 544px;
+    overflow: hidden;
+}
+.v1_11 {
+    width: 85px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 705px;
+    left: 581px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+.v1_12 {
+    width: 320px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 703px;
+    left: 162px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+.v1_13 {
+    width: 414px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 705px;
+    left: 60%;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+}
+.v1_14 {
+    width: 778px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 22px;
+    left: 37px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+}
