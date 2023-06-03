@@ -3,8 +3,9 @@ function changeImageToBase64(order,file) {
     const reader = new FileReader()
     reader.onload = (event) => {
       const base64Text = event.currentTarget.result.split(',')[1]
+    
     //   console.warn(base64Text)
-    sessionStorage.setItem(order,base64Text);
+    sessionStorage.setItem(order,file.type.split('/')[1]+","+base64Text);
       
     }
     reader.readAsDataURL(file)
@@ -22,7 +23,8 @@ window.addEventListener('DOMContentLoaded', function() {
             console.log('種類： ' + input.type)
             console.log('サイズ：'  + input.size / 1024 + 'KB')
             console.log('最終更新日：' + input.lastModifiedDate)
-            // changeImageToBase64(input)
+            
+            changeImageToBase64(i,input)
         }
     }, true)
 
