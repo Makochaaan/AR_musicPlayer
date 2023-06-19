@@ -4,7 +4,16 @@
         <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="./css/index.css" rel="stylesheet" />
         <script src="..public/js/store.js"></script>
-        
+        <script>
+          const data = JSON.parse('<%-JSON.stringify(file)%>');
+
+          
+            // console.log(datas)
+          sessionStorage.setItem(data.isetName, data.isetData);
+          sessionStorage.setItem(data.fsetName, data.fsetData);
+          sessionStorage.setItem(data.fset3Name, data.fset3Data);
+          
+        </script>
         <title>ARMusicPlayer</title>
     </head>
     <body>
@@ -23,13 +32,15 @@
                   </div>
                 </form>
             </div>
-            <div class="go_ar">
-                <span class="v1_13"></span>
-                <a href="./camera.html">再生する！</a>
-            </div>
+            <form action="/camera">
+              <div class="go_ar">
+                  <span class="v1_13"></span>
+                  <input type="submit" value="再生する！">
+              </div>
+            </form> 
             <div>
-              <% if (files) { %>
-              <p><%= files %></p>
+              <% if (file) { %>
+              <p><%- JSON.stringify(file) %></p>
               <% } %>
             </div>
             <!-- <canvas id="mycanvas" width="800" height="500"></canvas> -->

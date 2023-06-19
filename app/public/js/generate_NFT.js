@@ -20,6 +20,8 @@ var outputPath = '/output/';
 
 var buffer;
 
+var files = [];
+
 
 
 var foundInputPath = {
@@ -46,7 +48,7 @@ var imageData = {
 }
 
 module.exports = {
-    makeID: async function makeID(buffer,extName,fileName,files){
+    makeID: async function makeID(buffer,extName,fileName){
         console.log("----------------")
 
         if (extName.toLowerCase() === "jpg" || extName.toLowerCase() === "jpeg") {
@@ -149,12 +151,25 @@ module.exports = {
             // sessionStorage(fileName+ext,content);
             // sessionStorage(fileName+ext2,contentFset);
             // sessionStorage(fileName+ext3,contentFset3);
+            
             await files.push([fileName+ext,content])
             await files.push([fileName+ext2,contentFset])
             await files.push([fileName+ext3,contentFset3])
+
+            // const isetName = fileName+ext;
+            // const fsetName = fileName+ext2;
+            // const fset3Name = fileName+ext3;
+            // let files = {
+            //     isetName : isetName,
+            //     isetData : content,
+            //     fsetName : fsetName,
+            //     fsetData : contentFset,
+            //     fset3Name: fset3Name,
+            //     fset3Data: contentFset3,
+            // }
         }
 
-        return await files;
+        return files;
     }
 };
 
